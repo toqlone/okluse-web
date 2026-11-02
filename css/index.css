@@ -1,0 +1,111 @@
+:root {
+  /* Font family */
+  --font-family-base: "Inter", sans-serif;
+
+  /* Font weight */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+
+  /* Font size */
+  --font-size-xs: 0.75rem; /* 12px */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-base: 1rem; /* 16px */
+  --font-size-lg: 1.125rem; /* 18px */
+  --font-size-xl: 1.25rem; /* 20px */
+  --font-size-2xl: 1.5rem; /* 24px */
+  --font-size-3xl: 1.875rem; /* 30px */
+
+  /* Colors */
+  --color-text-primary: #1c1c1c;
+  --color-text-secondary: #6b7280;
+  --color-text-muted: #9ca3af;
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f9fafb;
+  --color-bg-tertiary: #f3f4f6;
+  --color-border-primary: #d1d5db;
+  --color-border-secondary: #e5e7eb;
+  --color-border-focus: #1c1c1c;
+  --color-brand: #1c1c1c;
+  --color-brand-hover: #333333;
+  --color-error: #dc2626;
+  --color-success: #16a34a;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-base);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-text-primary);
+}
+
+/* Header */
+.header {
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__brand {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-brand);
+  padding: 5px 13px;
+  border-radius: 30px;
+}
+
+.header__brand:hover {
+  color: var(--color-brand-hover);
+  background-color: var(--color-bg-tertiary);
+}
+
+/* Auth */
+.auth {
+  padding: 70px 30px 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.auth__container {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+}
+
+.auth__header {
+  width: 100%;
+  text-align: center;
+}
+
+.auth__header h1 {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-medium);
+  margin-bottom: 10px;
+}
+
+.auth__header p {
+  line-height: 1.5;
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+}
