@@ -13,12 +13,12 @@
 
     <link rel="stylesheet" href="/css/index.css" />
 
-    <title>Sign up</title>
+    <title>Sign in</title>
   </head>
   <body>
     <!-- Header -->
     <header class="header">
-      <a href="index.html" class="header__brand">Okluse</a>
+      <a href="./index.html" class="header__brand">Okluse</a>
     </header>
 
     <!-- Auth -->
@@ -26,24 +26,12 @@
       <div class="auth__container">
         <!-- Auth header -->
         <div class="auth__header">
-          <h1>Create your account</h1>
-          <p>Sign up to get access to a secure authentication platform.</p>
+          <h1>Get into your account</h1>
+          <p>Sign in to save, retrieve and update your data.</p>
         </div>
 
         <!-- Form -->
         <form action="#" class="form" novalidate>
-          <div class="form__group">
-            <label for="name-input" class="form__label">Name</label>
-            <input
-              type="text"
-              id="name-input"
-              class="form__input"
-              autocomplete="name"
-              placeholder="Enter your name"
-            />
-            <p class="form__hint form__hint--hidden"></p>
-          </div>
-
           <div class="form__group">
             <label for="email-input" class="form__label">Email address</label>
             <input
@@ -62,26 +50,24 @@
               type="password"
               id="password-input"
               class="form__input"
-              autocomplete="new-password"
+              autocomplete="current-password"
               placeholder="Enter your password"
             />
             <p class="form__hint form__hint--hidden"></p>
           </div>
 
           <div class="form__group">
-            <button type="submit" class="form__button">Create account</button>
+            <button type="submit" class="form__button">Sign in</button>
             <p
               id="form-hint"
               class="form__hint form__hint--hidden form__button-hint"
-            >
-              Form submitted.
-            </p>
+            ></p>
           </div>
         </form>
 
         <!-- Auth switch -->
         <p class="auth__switch">
-          Already have an account? <a href="#">Sign in</a>
+          Don't have an account? <a href="/pages/signup.html">Sign up</a>
         </p>
       </div>
     </main>

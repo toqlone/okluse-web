@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/index.css" />
+
+    <title>Sign up</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <a href="../index.html" class="header__brand">Okluse</a>
+    </header>
+
+    <!-- Auth -->
+    <main class="auth">
+      <div class="auth__container">
+        <!-- Auth header -->
+        <div class="auth__header">
+          <h1>Create your account</h1>
+          <p>Sign up to get access to a secure authentication platform.</p>
+        </div>
+
+        <!-- Form -->
+        <form action="#" class="form" novalidate>
+          <div class="form__group">
+            <label for="name-input" class="form__label">Name</label>
+            <input
+              type="text"
+              id="name-input"
+              class="form__input"
+              autocomplete="name"
+              placeholder="Enter your name"
+            />
+            <p class="form__hint form__hint--hidden"></p>
+          </div>
+
+          <div class="form__group">
+            <label for="email-input" class="form__label">Email address</label>
+            <input
+              type="email"
+              id="email-input"
+              class="form__input"
+              autocomplete="email"
+              placeholder="Enter your email"
+            />
+            <p class="form__hint form__hint--hidden"></p>
+          </div>
+
+          <div class="form__group">
+            <label for="password-input" class="form__label">Password</label>
+            <input
+              type="password"
+              id="password-input"
+              class="form__input"
+              autocomplete="new-password"
+              placeholder="Enter your password"
+            />
+            <p class="form__hint form__hint--hidden"></p>
+          </div>
+
+          <div class="form__group">
+            <button type="submit" class="form__button">Create account</button>
+            <p
+              id="form-hint"
+              class="form__hint form__hint--hidden form__button-hint"
+            ></p>
+          </div>
+        </form>
+
+        <!-- Auth switch -->
+        <p class="auth__switch">
+          Already have an account? <a href="/index.html">Sign in</a>
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
