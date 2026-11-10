@@ -12,6 +12,7 @@
     />
 
     <link rel="stylesheet" href="/css/index.css" />
+    <script src="/scripts/index.js" type="module" defer></script>
 
     <title>Sign in</title>
   </head>
@@ -40,8 +41,9 @@
               class="form__input"
               autocomplete="email"
               placeholder="Enter your email"
+              required
             />
-            <p class="form__hint form__hint--hidden"></p>
+            <p id="email-hint" class="form__hint form__hint--hidden"></p>
           </div>
 
           <div class="form__group">
@@ -52,8 +54,9 @@
               class="form__input"
               autocomplete="current-password"
               placeholder="Enter your password"
+              required
             />
-            <p class="form__hint form__hint--hidden"></p>
+            <p id="password-hint" class="form__hint form__hint--hidden"></p>
           </div>
 
           <div class="form__group">
