@@ -209,3 +209,75 @@ input {
 .auth__switch a:hover {
   text-decoration: underline;
 }
+
+/* Mobile screens - 380px and below */
+@media (max-width: 380px) {
+  /* Header */
+  .header {
+    min-height: 60px;
+    padding: 8px;
+  }
+
+  .header__brand {
+    font-size: var(--font-size-lg);
+    padding: 5px 10px;
+  }
+
+  /* Auth */
+  .auth {
+    padding: 40px 20px 25px;
+  }
+
+  .auth__container {
+    gap: 30px;
+  }
+
+  .auth__header h1 {
+    font-size: var(--font-size-2xl);
+    margin-bottom: 8px;
+  }
+
+  .auth__header p {
+    font-size: var(--font-size-sm);
+    line-height: 1.5;
+  }
+
+  /* Form */
+  .form {
+    gap: 20px;
+  }
+
+  .form__group {
+    gap: 5px;
+  }
+
+  .form__label {
+    font-size: var(--font-size-xs);
+  }
+
+  .form__input {
+    height: 38px;
+    padding: 6px 12px;
+    font-size: var(--font-size-sm);
+  }
+
+  .form__hint {
+    font-size: var(--font-size-xxs);
+  }
+
+  .form__button {
+    height: 38px;
+    font-size: var(--font-size-sm);
+    margin-top: 5px;
+  }
+
+  .form__button-hint {
+    font-size: var(--font-size-xs);
+  }
+
+  /* Auth switch */
+  .auth__switch {
+    font-size: var(--font-size-xs);
+    margin-top: -5px;
+  }
+}
